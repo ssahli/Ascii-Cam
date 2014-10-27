@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2617959519BBCCAC0074A419 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2617959419BBCCAC0074A419 /* Cocoa.framework */; };
+		2617959F19BBCCAC0074A419 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2617959D19BBCCAC0074A419 /* InfoPlist.strings */; };
+		261795A119BBCCAC0074A419 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 261795A019BBCCAC0074A419 /* main.m */; };
+		261795A519BBCCAC0074A419 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 261795A319BBCCAC0074A419 /* Credits.rtf */; };
+		261795A819BBCCAC0074A419 /* CamDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 261795A719BBCCAC0074A419 /* CamDocument.m */; };
+		261795AB19BBCCAD0074A419 /* CamDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261795A919BBCCAD0074A419 /* CamDocument.xib */; };
+		261795AE19BBCCAD0074A419 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261795AC19BBCCAD0074A419 /* MainMenu.xib */; };
+		261795B019BBCCAD0074A419 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261795AF19BBCCAD0074A419 /* Images.xcassets */; };
+		261795B719BBCCAD0074A419 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261795B619BBCCAD0074A419 /* XCTest.framework */; };
+		261795B819BBCCAD0074A419 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2617959419BBCCAC0074A419 /* Cocoa.framework */; };
+		261795C019BBCCAD0074A419 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 261795BE19BBCCAD0074A419 /* InfoPlist.strings */; };
+		261795C219BBCCAD0074A419 /* ASCII_CamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261795C119BBCCAD0074A419 /* ASCII_CamTests.m */; };
+		261795CC19BBCCB40074A419 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261795CB19BBCCB40074A419 /* AVFoundation.framework */; };
+		261795CE19BBCCB90074A419 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261795CD19BBCCB90074A419 /* OpenGL.framework */; };
+		261795D119BBCEAC0074A419 /* CamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 261795D019BBCEAC0074A419 /* CamView.m */; };
+		2638484719C10D84002BCF40 /* Vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 2638484619C10D84002BCF40 /* Vertex.glsl */; };
+		2666845B19C4EA8E00289A3B /* ASCIIFilter.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 2666845919C4EA8E00289A3B /* ASCIIFilter.glsl */; };
+		2666846119C530B700289A3B /* ascii.png in Resources */ = {isa = PBXBuildFile; fileRef = 2666846019C530B700289A3B /* ascii.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		261795B919BBCCAD0074A419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2617958919BBCCAC0074A419 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2617959019BBCCAC0074A419;
+			remoteInfo = "ASCII Cam v6";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2617959119BBCCAC0074A419 /* ASCII Cam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASCII Cam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2617959419BBCCAC0074A419 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2617959719BBCCAC0074A419 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2617959819BBCCAC0074A419 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2617959919BBCCAC0074A419 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2617959C19BBCCAC0074A419 /* ASCII Cam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASCII Cam-Info.plist"; sourceTree = "<group>"; };
+		2617959E19BBCCAC0074A419 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		261795A019BBCCAC0074A419 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		261795A219BBCCAC0074A419 /* ASCII Cam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASCII Cam-Prefix.pch"; sourceTree = "<group>"; };
+		261795A419BBCCAC0074A419 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		261795A619BBCCAC0074A419 /* CamDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamDocument.h; sourceTree = "<group>"; };
+		261795A719BBCCAC0074A419 /* CamDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamDocument.m; sourceTree = "<group>"; };
+		261795AA19BBCCAD0074A419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CamDocument.xib; sourceTree = "<group>"; };
+		261795AD19BBCCAD0074A419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		261795AF19BBCCAD0074A419 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		261795B519BBCCAD0074A419 /* ASCII CamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASCII CamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		261795B619BBCCAD0074A419 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		261795BD19BBCCAD0074A419 /* ASCII CamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASCII CamTests-Info.plist"; sourceTree = "<group>"; };
+		261795BF19BBCCAD0074A419 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		261795C119BBCCAD0074A419 /* ASCII_CamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCII_CamTests.m; sourceTree = "<group>"; };
+		261795CB19BBCCB40074A419 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		261795CD19BBCCB90074A419 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		261795CF19BBCEAC0074A419 /* CamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamView.h; sourceTree = "<group>"; };
+		261795D019BBCEAC0074A419 /* CamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamView.m; sourceTree = "<group>"; };
+		2638484619C10D84002BCF40 /* Vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vertex.glsl; sourceTree = "<group>"; };
+		2666845919C4EA8E00289A3B /* ASCIIFilter.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ASCIIFilter.glsl; sourceTree = "<group>"; };
+		2666846019C530B700289A3B /* ascii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ascii.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2617958E19BBCCAC0074A419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261795CE19BBCCB90074A419 /* OpenGL.framework in Frameworks */,
+				261795CC19BBCCB40074A419 /* AVFoundation.framework in Frameworks */,
+				2617959519BBCCAC0074A419 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261795B219BBCCAD0074A419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261795B819BBCCAD0074A419 /* Cocoa.framework in Frameworks */,
+				261795B719BBCCAD0074A419 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2617958819BBCCAC0074A419 = {
+			isa = PBXGroup;
+			children = (
+				2617959A19BBCCAC0074A419 /* ASCII Cam */,
+				261795BB19BBCCAD0074A419 /* ASCII CamTests */,
+				2617959319BBCCAC0074A419 /* Frameworks */,
+				2617959219BBCCAC0074A419 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2617959219BBCCAC0074A419 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2617959119BBCCAC0074A419 /* ASCII Cam.app */,
+				261795B519BBCCAD0074A419 /* ASCII CamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2617959319BBCCAC0074A419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				261795CD19BBCCB90074A419 /* OpenGL.framework */,
+				261795CB19BBCCB40074A419 /* AVFoundation.framework */,
+				2617959419BBCCAC0074A419 /* Cocoa.framework */,
+				261795B619BBCCAD0074A419 /* XCTest.framework */,
+				2617959619BBCCAC0074A419 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2617959619BBCCAC0074A419 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2617959719BBCCAC0074A419 /* AppKit.framework */,
+				2617959819BBCCAC0074A419 /* CoreData.framework */,
+				2617959919BBCCAC0074A419 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2617959A19BBCCAC0074A419 /* ASCII Cam */ = {
+			isa = PBXGroup;
+			children = (
+				261795A619BBCCAC0074A419 /* CamDocument.h */,
+				261795A719BBCCAC0074A419 /* CamDocument.m */,
+				261795CF19BBCEAC0074A419 /* CamView.h */,
+				261795D019BBCEAC0074A419 /* CamView.m */,
+				261795A919BBCCAD0074A419 /* CamDocument.xib */,
+				261795AC19BBCCAD0074A419 /* MainMenu.xib */,
+				2666845919C4EA8E00289A3B /* ASCIIFilter.glsl */,
+				2638484619C10D84002BCF40 /* Vertex.glsl */,
+				2666846019C530B700289A3B /* ascii.png */,
+				261795AF19BBCCAD0074A419 /* Images.xcassets */,
+				2617959B19BBCCAC0074A419 /* Supporting Files */,
+			);
+			name = "ASCII Cam";
+			path = "ASCII Cam v6";
+			sourceTree = "<group>";
+		};
+		2617959B19BBCCAC0074A419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2617959C19BBCCAC0074A419 /* ASCII Cam-Info.plist */,
+				2617959D19BBCCAC0074A419 /* InfoPlist.strings */,
+				261795A019BBCCAC0074A419 /* main.m */,
+				261795A219BBCCAC0074A419 /* ASCII Cam-Prefix.pch */,
+				261795A319BBCCAC0074A419 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261795BB19BBCCAD0074A419 /* ASCII CamTests */ = {
+			isa = PBXGroup;
+			children = (
+				261795C119BBCCAD0074A419 /* ASCII_CamTests.m */,
+				261795BC19BBCCAD0074A419 /* Supporting Files */,
+			);
+			name = "ASCII CamTests";
+			path = "ASCII Cam v6Tests";
+			sourceTree = "<group>";
+		};
+		261795BC19BBCCAD0074A419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261795BD19BBCCAD0074A419 /* ASCII CamTests-Info.plist */,
+				261795BE19BBCCAD0074A419 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2617959019BBCCAC0074A419 /* ASCII Cam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261795C519BBCCAD0074A419 /* Build configuration list for PBXNativeTarget "ASCII Cam" */;
+			buildPhases = (
+				2617958D19BBCCAC0074A419 /* Sources */,
+				2617958E19BBCCAC0074A419 /* Frameworks */,
+				2617958F19BBCCAC0074A419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASCII Cam";
+			productName = "ASCII Cam v6";
+			productReference = 2617959119BBCCAC0074A419 /* ASCII Cam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		261795B419BBCCAD0074A419 /* ASCII CamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261795C819BBCCAD0074A419 /* Build configuration list for PBXNativeTarget "ASCII CamTests" */;
+			buildPhases = (
+				261795B119BBCCAD0074A419 /* Sources */,
+				261795B219BBCCAD0074A419 /* Frameworks */,
+				261795B319BBCCAD0074A419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261795BA19BBCCAD0074A419 /* PBXTargetDependency */,
+			);
+			name = "ASCII CamTests";
+			productName = "ASCII Cam v6Tests";
+			productReference = 261795B519BBCCAD0074A419 /* ASCII CamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2617958919BBCCAC0074A419 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sami Sahli";
+				TargetAttributes = {
+					261795B419BBCCAD0074A419 = {
+						TestTargetID = 2617959019BBCCAC0074A419;
+					};
+				};
+			};
+			buildConfigurationList = 2617958C19BBCCAC0074A419 /* Build configuration list for PBXProject "ASCII Cam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2617958819BBCCAC0074A419;
+			productRefGroup = 2617959219BBCCAC0074A419 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2617959019BBCCAC0074A419 /* ASCII Cam */,
+				261795B419BBCCAD0074A419 /* ASCII CamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2617958F19BBCCAC0074A419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261795AB19BBCCAD0074A419 /* CamDocument.xib in Resources */,
+				261795B019BBCCAD0074A419 /* Images.xcassets in Resources */,
+				2666846119C530B700289A3B /* ascii.png in Resources */,
+				2617959F19BBCCAC0074A419 /* InfoPlist.strings in Resources */,
+				261795A519BBCCAC0074A419 /* Credits.rtf in Resources */,
+				261795AE19BBCCAD0074A419 /* MainMenu.xib in Resources */,
+				2638484719C10D84002BCF40 /* Vertex.glsl in Resources */,
+				2666845B19C4EA8E00289A3B /* ASCIIFilter.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261795B319BBCCAD0074A419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261795C019BBCCAD0074A419 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2617958D19BBCCAC0074A419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261795A819BBCCAC0074A419 /* CamDocument.m in Sources */,
+				261795A119BBCCAC0074A419 /* main.m in Sources */,
+				261795D119BBCEAC0074A419 /* CamView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261795B119BBCCAD0074A419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261795C219BBCCAD0074A419 /* ASCII_CamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261795BA19BBCCAD0074A419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2617959019BBCCAC0074A419 /* ASCII Cam */;
+			targetProxy = 261795B919BBCCAD0074A419 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2617959D19BBCCAC0074A419 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2617959E19BBCCAC0074A419 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		261795A319BBCCAC0074A419 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261795A419BBCCAC0074A419 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		261795A919BBCCAD0074A419 /* CamDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261795AA19BBCCAD0074A419 /* Base */,
+			);
+			name = CamDocument.xib;
+			sourceTree = "<group>";
+		};
+		261795AC19BBCCAD0074A419 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261795AD19BBCCAD0074A419 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		261795BE19BBCCAD0074A419 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261795BF19BBCCAD0074A419 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		261795C319BBCCAD0074A419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		261795C419BBCCAD0074A419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		261795C619BBCCAD0074A419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASCII Cam v6/ASCII Cam-Prefix.pch";
+				INFOPLIST_FILE = "ASCII Cam v6/ASCII Cam-Info.plist";
+				PRODUCT_NAME = "ASCII Cam";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		261795C719BBCCAD0074A419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASCII Cam v6/ASCII Cam-Prefix.pch";
+				INFOPLIST_FILE = "ASCII Cam v6/ASCII Cam-Info.plist";
+				PRODUCT_NAME = "ASCII Cam";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		261795C919BBCCAD0074A419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASCII Cam v6.app/Contents/MacOS/ASCII Cam v6";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASCII Cam v6/ASCII Cam v6-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ASCII Cam v6Tests/ASCII CamTests-Info.plist";
+				PRODUCT_NAME = "ASCII CamTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		261795CA19BBCCAD0074A419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASCII Cam v6.app/Contents/MacOS/ASCII Cam v6";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASCII Cam v6/ASCII Cam v6-Prefix.pch";
+				INFOPLIST_FILE = "ASCII Cam v6Tests/ASCII CamTests-Info.plist";
+				PRODUCT_NAME = "ASCII CamTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2617958C19BBCCAC0074A419 /* Build configuration list for PBXProject "ASCII Cam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261795C319BBCCAD0074A419 /* Debug */,
+				261795C419BBCCAD0074A419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261795C519BBCCAD0074A419 /* Build configuration list for PBXNativeTarget "ASCII Cam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261795C619BBCCAD0074A419 /* Debug */,
+				261795C719BBCCAD0074A419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261795C819BBCCAD0074A419 /* Build configuration list for PBXNativeTarget "ASCII CamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261795C919BBCCAD0074A419 /* Debug */,
+				261795CA19BBCCAD0074A419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2617958919BBCCAC0074A419 /* Project object */;
+}
