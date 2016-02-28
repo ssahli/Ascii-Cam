@@ -7,12 +7,13 @@
 
 @interface CamDocument()
 
-// Internal properties -- capture device
 @property (retain) NSArray                  *videoDevices;
 @property (assign) AVCaptureDevice          *selectedVideoDevice;
 @property (retain) AVCaptureDeviceInput     *videoDeviceInput;
 
 @end
+
+
 
 
 
@@ -29,15 +30,22 @@
 
 
 
-// Create & configure session, add video device input
+/*
+    Initialize video capture session and add the video device input.
+ */
 - (id)init
 {
     self = [super init];
     if (self) {
-        // Create session
+        /*
+            Initialize video capture session
+         */
         session = [[AVCaptureSession alloc] init];
         
-        // Select a video input device and configure session
+        
+        /*
+            Find and add the video device input
+         */
         AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
         if (videoDevice)
             [self setSelectedVideoDevice:videoDevice];
@@ -47,19 +55,36 @@
     return self;
 }
 
-// Stop the session
+
+
+
+
+/*
+    When closing the window or exiting the application, end the video capture session.
+ */
 - (void)windowWillClose:(NSNotification *)notification { [session stopRunning]; }
 
-// Once view has initialized, add the video data output and begin the session
+
+
+
+
+/*
+    Once the application's window finishes initialization, add the video data
+    output and start the video capture session.
+ */
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
     [super windowControllerDidLoadNib:aController];
     
-    // Connect the session output and the view
+    /*
+        Connect the video capture session and the video data output
+     */
     if ([view videoDataOutput])
         [session addOutput:[view videoDataOutput]];
     
-    // Start the session
+    /*
+        Start the video capture session
+     */
     [session startRunning];
 }
 
@@ -69,12 +94,20 @@
 
 
 
-// Get the video capture device
+/*
+    Get the video capture device
+ */
 - (AVCaptureDevice *)selectedVideoDevice {
     return [videoDeviceInput device];
 }
 
-// Set the video capture device
+
+
+
+
+/*
+    Set the video capture device.
+ */
 - (void)setSelectedVideoDevice:(AVCaptureDevice *)selectedVideoDevice
 {
     [session beginConfiguration];
@@ -82,7 +115,11 @@
     if (selectedVideoDevice) {
         NSError *error = nil;
         
-        // Create a device input for the selected device and add it to the AV session
+        
+        /*
+            Initialize an input device for the selected device, and add it to the
+            video capture session
+         */
         AVCaptureDeviceInput *newVideoDeviceInput = [AVCaptureDeviceInput deviceInputWithDevice:selectedVideoDevice error:&error];
         if (newVideoDeviceInput == nil) {
             dispatch_async(dispatch_get_main_queue(), ^(void) {
@@ -94,6 +131,10 @@
         }
     }
     
+    
+    /*
+        Set a low quality preset for the video capture
+     */
     [session setSessionPreset:AVCaptureSessionPresetLow];
     [session commitConfiguration];
 }

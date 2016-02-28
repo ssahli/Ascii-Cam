@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5319AC40-62E2-4E14-92FF-74077F758F86</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ASCII Cam</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E75A7A1704FF1EF49862D6AB4D6236E01AEC9C9B</key>
+		<string>https://github.com/ssahli/ASCII-Cam</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ASCII Cam.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E75A7A1704FF1EF49862D6AB4D6236E01AEC9C9B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ssahli/ASCII-Cam</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E75A7A1704FF1EF49862D6AB4D6236E01AEC9C9B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E75A7A1704FF1EF49862D6AB4D6236E01AEC9C9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ASCII-Cam</string>
+		</dict>
+	</array>
+</dict>
+</plist>
