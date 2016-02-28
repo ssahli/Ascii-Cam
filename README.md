@@ -1,9 +1,6 @@
 Ascii-Cam
 =========
 
-This is a simple proof-of-concept I wrote to get familiar with Objective-C and the Cocoa frameworks.
-The program uses live camera feed (OSX only), and uses OpenGL shaders to render a live, 'filtered' video.
-
 ASCII-Cam is an OS X video application that transforms live video capture using a colored ASCII OpenGL shader. The intent behind writing this program was for me to familiarize myself with Objective-C, the Cocoa frameworks, and OpenGL. I had originally created this program without OpenGL, but the performance was (predictably) awful.
 
 ### File overview
