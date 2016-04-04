@@ -14,4 +14,4 @@ ASCII-Cam is an OS X video application that transforms live video capture using 
   
   * ascii.png: an image of the ASCII characters used in ASCIIFilter.glsl. If you decide to change this, a few things in ASCIIFilter.glsl will require changing as well. See below for details.
 
-![Alt text](Example.png?raw=true)
+![Hello World!](Example.png?raw=true)
